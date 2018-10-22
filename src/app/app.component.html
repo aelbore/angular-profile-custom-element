@@ -1,0 +1,7 @@
+<div class="container">
+    <ar-input placeholder="Search" (ar.change)="onSearch($event)"></ar-input>
+
+  <div *ngFor="let profile of profiles | async">
+    <card [profile]="profile" class="col-md-4"></card>
+  </div>
+</div>
